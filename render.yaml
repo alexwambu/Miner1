@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: monero-miner
+    runtime: docker
+    plan: free
+    envVars:
+      - key: WALLET_ADDRESS
+        value: 44WVaowVg4id5fLZ4g7MBGjWPFiwRmQ4KPyB9fdF2enfF34GKs8uM7WeyU62fT7xX7ZU4EhZDM5ikiu4RejA1uLRQwoT52r
+    dockerfilePath: ./Dockerfile
